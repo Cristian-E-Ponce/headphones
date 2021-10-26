@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <title>TechPRO Audífonos</title>
 
 </head>
 <body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <picture>
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.avif 1920w"
+                        type="image/avif">
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.webp 1920w" 
+                        type="image/webp">
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.png 1920w" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="1000" height="600">
+                </picture>
+            </div> <!-- .imagen-header -->
+
+            <div class="texto-header">
+                <p class="tagline-producto">Sonido Profesional</p>
+                <h1 class="nombre-producto degradado-verde">TechPRO</h1>
+                <p class="descripcion-producto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore et, a, nam beatae sint sit quos unde pariatur, libero eum ab molestias tempore temporibus fugit hic est vitae quasi. Fugit?</p>
+                <p class="precio-producto">Desde <span>$299</span> </p>
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
