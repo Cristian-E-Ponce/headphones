@@ -176,3 +176,75 @@ img {
     background-repeat: repeat, no-repeat;
     background-size: cover;
 }
+
+.notavif.notwebp .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+}
+
+.webp .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.webp);
+}
+
+.avif .sobre-tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
+}
+
+@media (min-width: 768px) {
+    .sobre-tech { 
+        background-repeat: repeat, no-repeat;
+    }
+
+    .notavif.notwebp .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    }
+
+    .webp .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.webp);
+    }
+
+    .avif .sobre-tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
+    }
+}
+
+@media (min-width: 1600px) {
+    .sobre-tech {
+        background-size: 100%, 210rem;
+    }
+}
+
+.sobre-tech-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .sobre-tech-grid {
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        padding: calc(var(--separacion) * 2);
+    }
+}
+
+.texto-sobre-tech {
+    grid-row: 2 / 3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: var(--separacion);
+}
+
+.texto-sobre-tech h2 {
+    font-size: 4rem;
+}
+
+.texto-sobre-tech p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+/* Modelos */
