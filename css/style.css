@@ -484,3 +484,24 @@ img {
   width: 100%;
   padding: 1rem;
 }
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+}
+
+/* Footer */
+
+.footer p {
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--primario);
+    padding: 2rem 0;
+}
